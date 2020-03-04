@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Futura;
+
+}
+
+html{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../eye.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 7px 20px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+	text-transform: lower case;
+	transition: 0.6s ease;
+
+}
+
+ul li a:hover{
+	background-color: orange;
+	color: white;
+}
+
+ul li.active a{
+	background-color: orange;
+	color: white;
+}
+
+.logo img{
+
+	float: left;
+	width: 150px;
+	height: auto;
+	margin-top: 16px;
+	margin-left: 16px;
+}
+
+.title h1{
+	font-family: Futura;
+	white-space: nowrap;
+	color: orange;
+	font-size: 100px;
+	
+}
+
+body {
+  overflow: scroll;
+}
+
+
+.title{
+	position: absolute;
+	top: 15%;
+	right: 28%;
+	overflow: scroll;
+
+}
+
+
+.subtitle{
+	position: absolute;
+	bottom: 25%;
+	right: 20%;
+	overflow: scroll;
+}
+
+.subtitle h2 {
+	font-size: 30px;
+  color: #fff;
+  font-family: Futura;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 10 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .9s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
